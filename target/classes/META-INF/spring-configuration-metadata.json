@@ -1,0 +1,77 @@
+{
+  "groups": [
+    {
+      "name": "weixin",
+      "type": "com.tencent.mall.properties.WeixinProperties",
+      "sourceType": "com.tencent.mall.properties.WeixinProperties"
+    },
+    {
+      "name": "weixinpayconfig",
+      "type": "com.tencent.mall.properties.WeixinpayProperties",
+      "sourceType": "com.tencent.mall.properties.WeixinpayProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "weixin.appid",
+      "type": "java.lang.String",
+      "description": "小程序 appId",
+      "sourceType": "com.tencent.mall.properties.WeixinProperties"
+    },
+    {
+      "name": "weixin.jscode2session-url",
+      "type": "java.lang.String",
+      "description": "登录凭证校验请求地址",
+      "sourceType": "com.tencent.mall.properties.WeixinProperties"
+    },
+    {
+      "name": "weixin.secret",
+      "type": "java.lang.String",
+      "description": "小程序 appSecret",
+      "sourceType": "com.tencent.mall.properties.WeixinProperties"
+    },
+    {
+      "name": "weixinpayconfig.appid",
+      "type": "java.lang.String",
+      "description": "公众账号ID",
+      "sourceType": "com.tencent.mall.properties.WeixinpayProperties"
+    },
+    {
+      "name": "weixinpayconfig.device-info",
+      "type": "java.lang.String",
+      "description": "设备号",
+      "sourceType": "com.tencent.mall.properties.WeixinpayProperties"
+    },
+    {
+      "name": "weixinpayconfig.key",
+      "type": "java.lang.String",
+      "description": "商户的key【API密匙】",
+      "sourceType": "com.tencent.mall.properties.WeixinpayProperties"
+    },
+    {
+      "name": "weixinpayconfig.mch-id",
+      "type": "java.lang.String",
+      "description": "商户号",
+      "sourceType": "com.tencent.mall.properties.WeixinpayProperties"
+    },
+    {
+      "name": "weixinpayconfig.notify-url",
+      "type": "java.lang.String",
+      "description": "服务器异步通知页面路径",
+      "sourceType": "com.tencent.mall.properties.WeixinpayProperties"
+    },
+    {
+      "name": "weixinpayconfig.return-url",
+      "type": "java.lang.String",
+      "description": "服务器同步通知页面路径",
+      "sourceType": "com.tencent.mall.properties.WeixinpayProperties"
+    },
+    {
+      "name": "weixinpayconfig.url",
+      "type": "java.lang.String",
+      "description": "api请求地址",
+      "sourceType": "com.tencent.mall.properties.WeixinpayProperties"
+    }
+  ],
+  "hints": []
+}
