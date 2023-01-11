@@ -1,17 +1,75 @@
-server:
-  port: 80
+#server:
+#  port: 8088
+#
+#
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE:springboot_demo}
+#    username: ${MYSQL_USERNAME}
+#    password: ${MySQL_PASSWORD}
+#  mvc:
+#    view:
+#      suffix: .html
+#      prefix: /
+#
+#mybatis:
+#  mapper-locations: classpath*:mapper/*Mapper.xml
 
 
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE:springboot_demo}
-    username: ${MYSQL_USERNAME}
-    password: ${MySQL_PASSWORD}
-  mvc:
-    view:
-      suffix: .html
-      prefix: /
+  server:
+    port: 8088
+    servlet:
+      context-path: /
 
-mybatis:
-  mapper-locations: classpath*:mapper/*Mapper.xml
+  spring:
+    datasource:
+#      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/db_java1234_mall?serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+
+  mybatis-plus:
+    global-config:
+      db-config:
+        id-type: auto #id生成规则：数据库id自增
+    configuration:
+      map-underscore-to-camel-case: false
+      auto-mapping-behavior: full
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    mapper-locations: classpath:mapper/*.xml
+
+  weixin:
+    jscode2sessionUrl: https://api.weixin.qq.com/sns/jscode2session
+    appid: wx3ca506605718e96c
+    secret: 3ccaffd4bba32c1fcdaec4792103a394
+
+
+  #微信支付配置
+  # addid 公众账号ID
+  # mch_id 商户号
+  # device_info 设备号
+  # key 商户的key【API密匙】
+  # url api请求地址
+  # notify_url 服务器异步通知页面路径
+  weixinpayconfig:
+    appid: wx3ca506605718e96c
+    mch_id: wx3ca506605718e96c
+    key: wx3ca506605718e96c
+    url: https://api.mch.weixin.qq.com/pay/unifiedorder
+    notify_url: https://3e31-222-184-165-54.ngrok.io/weixinpay/notifyUrl
+
+  bigTypeImagesFilePath: D://java1234-mall/bigTypeImgs/
+
+  productImagesFilePath: D://java1234-mall/productImgs/
+
+  swiperImagesFilePath: D://java1234-mall/swiperImgs/
+
+  productSwiperImagesFilePath: D://java1234-mall/productSwiperImgs/
+
+
+
+
+
+
