@@ -28,7 +28,7 @@
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://sh-cynosdbmysql-grp-hkvmmoeo.sql.tencentcdb.com:22742/mall?serverTimezone=Asia/Shanghai
       username: root
-      password: 123456
+      password: Jarry1234@
 #    driver-class-name: com.mysql.cj.jdbc.Driver
 #    url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE:springboot_demo}
 #    username: ${MYSQL_USERNAME}
